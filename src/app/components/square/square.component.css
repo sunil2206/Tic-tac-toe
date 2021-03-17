@@ -1,0 +1,78 @@
+div.card{
+    height:480px;
+    width:480px;
+}
+div.jumbotron{
+    height:480px;
+    width:480px;
+}
+.badge{
+    font-size: 40px;
+    font-family: cursive;
+    animation: zoomInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.gamename{
+    font-family: cursive;
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.btn-primary{
+    height: 50px;
+    width:100px;
+    font-size: 25px;
+    animation:flipOutX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+.btn-new{
+    height: 50px;
+    width:160px;
+    font-size: 25px;
+    background-color: sandybrown;
+}
+p{
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1; /* don't forget to set a duration! */
+}
+@media screen and (max-width: 480px) {
+    .gamename{
+        margin-top:0px;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+    span.player{
+        margin-top:0px;
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+    div.jumbotron{
+        height:210px;
+        width:140px;
+    }
+    div.card{
+        height:210px;
+        width:210px;
+    }
+    .btn-new{
+        height: 20px;
+        width:75px;
+        font-size: 7px;
+        background-color: sandybrown;
+    }
+    .btn-primary{
+        height: 20px;
+        width:70px;
+        font-size: 7px;
+        animation:flipOutX; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+    }
+    .badge{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 25px;
+        font-size: 15px;
+        font-family: cursive;
+        animation: zoomInDown; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+    }
+}

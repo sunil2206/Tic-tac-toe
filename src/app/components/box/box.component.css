@@ -1,0 +1,28 @@
+div.card{
+    background-color: rgba(242, 247, 1, 0.973);
+    height: 160px;
+    width: 160px;
+}
+p.symb{
+    vertical-align: middle;
+    align-self: center;
+    font-size: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+    div.card{
+        height:70px;
+        width:70px;
+    }
+    p.symb{
+        vertical-align: middle;
+        align-self: center;
+        font-size: 35px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+div.card:hover{
+    background-color: rgba(238, 241, 16, 0.788);
+}

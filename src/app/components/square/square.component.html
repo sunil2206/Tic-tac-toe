@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+    
+    <div class="jumbotron mt-2">
+      <div class="gamename">Tic Tac Toe</div>
+      <span class="player">Player Turn:<p>{{this.turnOf}}</p></span>
+      <span *ngIf="this.gameOver" class="badge badge-pill badge-info mb-2">Winner:{{this.winnerName}}</span><br>
+      <span *ngIf="this.gameDraw" class="badge badge-pill badge-warning mb-2">draw</span><br>
+      <div class="btn btn-primary" *ngIf="!this.gameStart" (click)="start()">PLAY<i class="fas fa-caret-right ml-2"></i></div>
+      <div class="btn btn-new" *ngIf="this.gameStart && this.gameOver || this.gameDraw" (click)="Restart()">RESTART<i class="fas fa-redo ml-2"></i></div>
+    </div>
+    <div *ngIf="this.gameStart" class="card mt-2 gameCard">
+    <div class="row ml-0">
+      <app-box [div_id]="1" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="2" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="3" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+    </div>
+    <div class="row ml-0">
+      <app-box [div_id]="4" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="5" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="6" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+    </div>
+    <div class="row ml-0">
+      <app-box [div_id]="7" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="8" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+      <app-box [div_id]="9" [turnOfX]="this.turnOfX" (change)="check()"></app-box>
+    </div>
+  </div>
+  </div>
